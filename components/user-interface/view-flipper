@@ -1,0 +1,53 @@
+# View Flipper
+Component that allows you to display multiple images every period of time.
+
+## Properties
+### Add Images from String
+Write the names of the files you want to be displayed in your View Flipper (including its format. For example, ".png").
+
+### Background color
+Set the background color of your View Flipper.
+
+### Flip interval
+Set the time (in milliseconds) you want to wait until the next image is displayed.
+
+### Height
+Set the height (vertical size) of your View Flipper. You can choose between "Automatic" (the View Flipper height will be adapted to the image original height), "Fill Parent" (the View flipper height will be adapted to the height of the last arrangement he is attached to. If it's not in any arrangement, its height will be full-screen), "[?] pixels" (to set the View Flipper height to a defined size) or "[?] percent" (to set the View Flipper height to a defined percentage of the screen).
+
+### Width
+Set the width (horizontal size) of your View Flipper. You can choose between "Automatic" (the View Flipper width will be adapted to the image original width), "Fill Parent" (the View flipper width will be adapted to the width of the last arrangement he is attached to. If it's not in any arrangement, its width will be full-screen), "[?] pixels" (to set the View Flipper width to a defined size) or "[?] percent" (to set the View Flipper width to a defined percentage of the screen).
+
+### Swipeable
+If checked, the View Flipper will display the following image if the user touches it.
+
+### Visible
+If checked, the View Flipper will be visible for the user, and will occupy the space in the screen according to its Height and Width.
+
+## Events
+none
+
+## Methods
+
+### call View_Flipper.Add Component to View
+
+
+### call View_Flipper.Add Images to View
+Adds images that will be displayed after the ones that were already in the Images list. To add a single image, connect a Text block with the file name. To add multiple images, connect a list block with text blocks attached to it.
+
+### call View_Flipper.Show Next
+The View Flipper will show the image that's after the one that is being displayed.
+
+### call View_Flipper.Show Previous
+The View Flipper will show the image that's before the one that is being displayed.
+
+### call View_Flipper.Start Flipping
+The View Flipper will start flipping images every a certain time, specified in the Flip interval option on Properties menu.
+
+### call View_Flipper.Stop Flipping
+The View Flipper will stop flipping images.
+
+### call View_Flipper.is Flipping
+Checks if the View Flipper is Flipping images. It'll return "true" if the View Flipper is flipping or "false" if not.
+
+
+
